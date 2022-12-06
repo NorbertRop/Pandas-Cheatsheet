@@ -1,5 +1,5 @@
 # Pandas-Cheatsheet
-Handy methods for processing data with the pandas library. 
+Useful methods and information for processing data with the pandas library. 
 
 #### Search for non-numeric values
 ```python
@@ -20,6 +20,9 @@ df['date'] = df['date'].dt.tz_localize('UTC')
 ```python
 df['date'] = df['date'].view(int).floordiv(1e9).astype(int)
 ```
+
+## List of time zones 
+[Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 #### Pandas datetime format
 | Code | Meaning                                                                                                                                                                          | Sample                                                                       |
